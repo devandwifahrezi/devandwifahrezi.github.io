@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Devan Dwi Fahrezi">
+<meta name="dcterms.date" content="2023-01-19">
+
+<title>Melihat hubungan ekspor dan nilai tukar</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Melihat hubungan ekspor dan nilai tukar</h1>
+<p class="subtitle lead">Analisis pengaruh ekspor komoditi lada hitam ke negara Amerika Serikat terhadap nilai tukar rupiah 2012-2021</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Devan Dwi Fahrezi </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 19, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p><img src="images/poltekapp%20(1).jpg" class="img-fluid"></p>
+<section id="pendahuluan" class="level2" data-number="1">
+<h2 data-number="1" class="anchored" data-anchor-id="pendahuluan"><span class="header-section-number">1</span> Pendahuluan</h2>
+<section id="latar-belakang" class="level3" data-number="1.1">
+<h3 data-number="1.1" class="anchored" data-anchor-id="latar-belakang"><span class="header-section-number">1.1</span> Latar belakang</h3>
+<p>Topik kali ini saya membahas Analisis pengaruh ekspor komoditi lada hitam ke negara Amerika Serikat terhadap nilai tukar rupiah 2012-2021. Ekspor komoditi lada hitam berpengaruh terhadap nilai tukar. hal tersebut sesuai dengan teori balance of payment, ekspor neto sering menjadi faktor yang dapat mendorong naik dan turunnya kurs mata uang suatu negara. Nilai koefisien ekspor sebesar 3.770e-08 berarti kenaikan perubahan ekspor neto mengakibatkan nilai kurs dolar terhadap masing-masing negara. Dengan hasil ini berarti pendapatan ekspor berpengaruh positif terhadap&nbsp;nilai&nbsp;tukar.</p>
+</section>
+<section id="ruang-lingkup" class="level3" data-number="1.2">
+<h3 data-number="1.2" class="anchored" data-anchor-id="ruang-lingkup"><span class="header-section-number">1.2</span> Ruang lingkup</h3>
+<p>Pada penelitian ini saya mengambil komoditi unggulan sektor perkebunan yang digunakan adalah lada hitam. Pada penelitian lada hitam ini variabel yang digunakan adalah harga pasar internasional yang saya dapat dari website BPS. Selain itu digunakan variabel harga negara kompetitor yaitu harga negara Amerika Serikat.</p>
+</section>
+<section id="rumusan-masalah" class="level3" data-number="1.3">
+<h3 data-number="1.3" class="anchored" data-anchor-id="rumusan-masalah"><span class="header-section-number">1.3</span> Rumusan masalah</h3>
+<p>Rumusan masalah kali ini berdasarkan uraian latar belakang masalah diatas, maka terdapat beberapa indikator yang menjadi rumusan masalah dalam penelitian ini, adapun rumusan masalah tersebut adalah sebagai berikut:</p>
+<p>1. Apakah nilai tukar rupiah berpengaruh terhadap nilai ekspor lada hitam Indonesia ke negara Amerika Serikat tahun 2012 s.d 2021?</p>
+</section>
+<section id="tujuan-dan-manfaat-penelitian" class="level3" data-number="1.4">
+<h3 data-number="1.4" class="anchored" data-anchor-id="tujuan-dan-manfaat-penelitian"><span class="header-section-number">1.4</span> Tujuan dan manfaat penelitian</h3>
+<p>Adapun yang menjadi tujuan dari penelitian ini adalah :</p>
+<ol type="1">
+<li>Untuk mengetahui dan menganalisis seberapa besar pengaruh ekspor komoditi lada hitam indonesia ke negara Amerika Serikat terhadap nilai tukar rupiah pada tahun 2012-2021</li>
+</ol>
+<p>Adapun manfaat yang diperoleh dari penelitian ini adalah:</p>
+<p>1. Bagi peneliti Bertambahnya ilmu pengetahuan dan wawasan terkait tema yang diteliti oleh peneliti.</p>
+<p>2. Bagi Masyarakat Memberikan informasi kepada masyarakat mengenai pengaruh ekspor komoditi lada hitam indonesia ke negara Amerika Serikat terhadap nilai tukar rupiah pada tahun 2012-2021.</p>
+</section>
+</section>
+<section id="studi-pustaka" class="level2" data-number="2">
+<h2 data-number="2" class="anchored" data-anchor-id="studi-pustaka"><span class="header-section-number">2</span> Studi pustaka</h2>
+<p>Salah satu bagian yang penting dalam penelitian adalah melakukan studi literatur, yaitu membaca dari berbagai sumber sesuai dengan topik yang diteliti untuk menghasilkan ide/analisis baru yang dipresentasikan dalam sebuah karya ilmiah.</p>
+<p>Data yang akan diolah dan dianalisis dalam penelitian ini adalah data ekspor komoditi lada hitam merupakan data sekunder, yaitu data yang telah diolah pihak lain sebelumnya dari instansi yang berwenang dan terkait dengan sektor moneter yaitu Badan Pusat Statistik serta jurnal-jurnal ilmiah, website di internet, artikel dan literatur-literatur yang relevan dalam penelitian ini.</p>
+</section>
+<section id="metode-penelitian" class="level2" data-number="3">
+<h2 data-number="3" class="anchored" data-anchor-id="metode-penelitian"><span class="header-section-number">3</span> Metode penelitian</h2>
+<section id="data" class="level3" data-number="3.1">
+<h3 data-number="3.1" class="anchored" data-anchor-id="data"><span class="header-section-number">3.1</span> Data</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Tahun</th>
+<th>Amerika Serikat</th>
+<th>Indonesia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>2012</td>
+<td>1214788000</td>
+<td>18318395646000</td>
+</tr>
+<tr class="even">
+<td>2013</td>
+<td>753337000</td>
+<td>11359945291500</td>
+</tr>
+<tr class="odd">
+<td>2014</td>
+<td>35979000</td>
+<td>542545330500</td>
+</tr>
+<tr class="even">
+<td>2015</td>
+<td>77914000</td>
+<td>1174904163000</td>
+</tr>
+<tr class="odd">
+<td>2016</td>
+<td>491485000</td>
+<td>7411348057500</td>
+</tr>
+<tr class="even">
+<td>2017</td>
+<td>283535000</td>
+<td>4275566032500</td>
+</tr>
+<tr class="odd">
+<td>2018</td>
+<td>81849000</td>
+<td>1234241995500</td>
+</tr>
+<tr class="even">
+<td>2019</td>
+<td>70258000</td>
+<td>1059455511000</td>
+</tr>
+<tr class="odd">
+<td>2020</td>
+<td>88144000</td>
+<td>1329167448000</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>6956000</td>
+<td>104893002000</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="metode-analisis" class="level3" data-number="3.2">
+<h3 data-number="3.2" class="anchored" data-anchor-id="metode-analisis"><span class="header-section-number">3.2</span> Metode analisis</h3>
+<p>Teknik analisis yang digunakan dalam penelitian ini adalah teknik kuantitatif dan penjabaran deskriptif. Teknik analisis kuantitatif merupakan analisis yang dilakukan dengan perhitungan angka-angka yang faktor yang mempengaruhi indeks nilai tukar rupiah terhadap dolar Amerika Serikat yaitu nilai ekspor komoditi lada hitam. Pendekatan yang digunakan adalah kuantitatif dengan mengaplikasikan model regresi linier berganda. Secara spesifik model tersebut dapat disajikan sebagai berikut:</p>
+<p>Yi=β0+β1Xi+μi</p>
+<p>Dimana: Yi adalah nilai tukar USD terhadap mata uang negara lain., β0 adalah koefisien konstanta; β1 adalah parameter; Xi adalah nilai ekspor dan μi adalah error term.</p>
+</section>
+</section>
+<section id="pembahasan" class="level2" data-number="4">
+<h2 data-number="4" class="anchored" data-anchor-id="pembahasan"><span class="header-section-number">4</span> Pembahasan</h2>
+<section id="pembahasan-masalah" class="level3" data-number="4.1">
+<h3 data-number="4.1" class="anchored" data-anchor-id="pembahasan-masalah"><span class="header-section-number">4.1</span> Pembahasan masalah</h3>
+<table class="table">
+<thead>
+<tr class="header">
+<th>X (Amerika Serikat)</th>
+<th>Y (Indonesia)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1214788000</td>
+<td>18318395646000</td>
+</tr>
+<tr class="even">
+<td>753337000</td>
+<td>11359945291500</td>
+</tr>
+<tr class="odd">
+<td>35979000</td>
+<td>542545330500</td>
+</tr>
+<tr class="even">
+<td>77914000</td>
+<td>1174904163000</td>
+</tr>
+<tr class="odd">
+<td>491485000</td>
+<td>7411348057500</td>
+</tr>
+<tr class="even">
+<td>283535000</td>
+<td>4275566032500</td>
+</tr>
+<tr class="odd">
+<td>81849000</td>
+<td>1234241995500</td>
+</tr>
+<tr class="even">
+<td>70258000</td>
+<td>1059455511000</td>
+</tr>
+<tr class="odd">
+<td>88144000</td>
+<td>1329167448000</td>
+</tr>
+<tr class="even">
+<td>6956000</td>
+<td>104893002000</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="analisis-masalah" class="level3" data-number="4.2">
+<h3 data-number="4.2" class="anchored" data-anchor-id="analisis-masalah"><span class="header-section-number">4.2</span> Analisis masalah</h3>
+<p>Hasil regresinya adalah</p>
+<pre class="{call:}"><code>lm(formula = Y ~ X, data = dat)
+
+Residuals:
+       Min         1Q     Median 
+-1.048e-07 -2.870e-09 -1.787e-09 
+        3Q        Max 
+ 8.392e-09  7.684e-08 
+
+Coefficients:
+             Estimate Std. Error
+(Intercept) 3.770e-08  2.156e-08
+X           6.632e-05  2.923e-21
+              t value Pr(&gt;|t|)    
+(Intercept) 1.749e+00    0.118    
+X           2.269e+16   &lt;2e-16 ***
+---
+Signif. codes:  
+  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05
+  ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.268e-08 on 8 degrees of freedom
+Multiple R-squared:      1, Adjusted R-squared:      1 
+F-statistic: 5.146e+32 on 1 and 8 DF,  p-value: &lt; 2.2e-16</code></pre>
+<p>berdasarkan output di atas, model regresinya bisa dilihat dari bagian estimate, yaitu y = 3.770e-08 + 6.632e-05. dari uji parsial dengan t-value sebesar2.269e+16 dan p-value&lt; 2.2e-16 dimana tingkat signifikansi yang digunakan adalah 0.05, memberikan hasil tolak H0: β1=0 artinya variabel X (Nilai tukar uang Amerika Serikat) secara signifikan berpengaruh terhadap model.</p>
+<p>Nilai koefisien regresi dari X sebesar 6.632e-05 dapat kita interpretasikan bahwa setiap kenaikan nilai tukar uang X (nilai tukar uang Amerika Serikat), maka nilai Y (nilai tukar uang Indonesia) akan naik sebesar 6.632e-05</p>
+</section>
+</section>
+<section id="kesimpulan" class="level2" data-number="5">
+<h2 data-number="5" class="anchored" data-anchor-id="kesimpulan"><span class="header-section-number">5</span> Kesimpulan</h2>
+<p>Berdasarkan data yang diperoleh beberapa hasil penelitian dan pembahasan. Uraian hasil penelitian dan pembahasan terdapat pada kesimpulan. Berikut kesimpulan dari penelitian mengenai volume ekspor lada hitam Indonesia ke negara Amerika Serikat sebagai berikut : Ekspor komoditi lada hitam berpengaruh terhadap nilai tukar. hal tersebut sesuai dengan teori balance of payment, ekspor neto sering menjadi faktor yang dapat mendorong naik dan turunnya kurs mata uang suatu negara. Nilai koefisien ekspor sebesar 3.770e-08 berarti kenaikan perubahan ekspor neto mengakibatkan nilai kurs dolar terhadap masing-masing negara. Dengan hasil ini berarti pendapatan ekspor berpengaruh positif terhadap&nbsp;nilai&nbsp;tukar.</p>
+<p>Saran : untuk komoditi lada hitam harus lebih meningkatkan volume ekspor lagi agar pendapatan ekspor berpengaruh positif terhadap nilai tukar makin tinggi daripada tahun tahun sebelumnya.</p>
+</section>
+<section id="referensi" class="level2" data-number="6">
+<h2 data-number="6" class="anchored" data-anchor-id="referensi"><span class="header-section-number">6</span> Referensi</h2>
+<p>Fathin Ahmad Naufal, Bayu Krisnamurthi, dan Lukman M. Baga. (2021). ANALISIS FAKTOR-FAKTOR YANG MEMENGARUHI PRODUKSI LADA DI PROVINSI LAMPUNG. Forum Agribisnis (Agribusiness Forum), 12, 1–11. https://doi.org/10.29244/fagb.12.1.1-11 BPS.</p>
+<p>Ekspor Lada Hitam Menurut Negara Tujuan Utama, 2012- 2021. Badan Pusat Statistik. https://www.bps.go.id/statictable/2019/02/18/2021/ekspor-lada-hitam-menurut-negara-tujuan-utama-2012–2021.html ROOSGANDHA ELIZABETH.</p>
+<p>KERAGAAN KOMODITAS LADA INDONESIA. media.neliti, 1–21.</p>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,142 @@
+---
+title: "Melihat hubungan ekspor dan nilai tukar"
+subtitle: "Analisis pengaruh ekspor komoditi lada hitam ke negara Amerika Serikat terhadap nilai tukar rupiah 2012-2021"
+author: "Devan Dwi Fahrezi"
+date: 2023-01-19
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: visual
+---
+
+![](images/poltekapp%20(1).jpg)
+
+## Pendahuluan
+
+### Latar belakang
+
+Topik kali ini saya membahas Analisis pengaruh ekspor komoditi lada hitam ke negara Amerika Serikat terhadap nilai tukar rupiah 2012-2021. Ekspor komoditi lada hitam berpengaruh terhadap nilai tukar. hal tersebut sesuai dengan teori balance of payment, ekspor neto sering menjadi faktor yang dapat mendorong naik dan turunnya kurs mata uang suatu negara. Nilai koefisien ekspor sebesar 3.770e-08 berarti kenaikan perubahan ekspor neto mengakibatkan nilai kurs dolar terhadap masing-masing negara. Dengan hasil ini berarti pendapatan ekspor berpengaruh positif terhadap nilai tukar.
+
+### Ruang lingkup
+
+Pada penelitian ini saya mengambil komoditi unggulan sektor perkebunan yang digunakan adalah lada hitam. Pada penelitian lada hitam ini variabel yang digunakan adalah harga pasar internasional yang saya dapat dari website BPS. Selain itu digunakan variabel harga negara kompetitor yaitu harga negara Amerika Serikat.
+
+### Rumusan masalah
+
+Rumusan masalah kali ini berdasarkan uraian latar belakang masalah diatas, maka terdapat beberapa indikator yang menjadi rumusan masalah dalam penelitian ini, adapun rumusan masalah tersebut adalah sebagai berikut:
+
+1\. Apakah nilai tukar rupiah berpengaruh terhadap nilai ekspor lada hitam Indonesia ke negara Amerika Serikat tahun 2012 s.d 2021?
+
+### Tujuan dan manfaat penelitian
+
+Adapun yang menjadi tujuan dari penelitian ini adalah :
+
+1.  Untuk mengetahui dan menganalisis seberapa besar pengaruh ekspor komoditi lada hitam indonesia ke negara Amerika Serikat terhadap nilai tukar rupiah pada tahun 2012-2021
+
+Adapun manfaat yang diperoleh dari penelitian ini adalah:
+
+1\. Bagi peneliti Bertambahnya ilmu pengetahuan dan wawasan terkait tema yang diteliti oleh peneliti.
+
+2\. Bagi Masyarakat Memberikan informasi kepada masyarakat mengenai pengaruh ekspor komoditi lada hitam indonesia ke negara Amerika Serikat terhadap nilai tukar rupiah pada tahun 2012-2021.
+
+## Studi pustaka
+
+Salah satu bagian yang penting dalam penelitian adalah melakukan studi literatur, yaitu membaca dari berbagai sumber sesuai dengan topik yang diteliti untuk menghasilkan ide/analisis baru yang dipresentasikan dalam sebuah karya ilmiah.
+
+Data yang akan diolah dan dianalisis dalam penelitian ini adalah data ekspor komoditi lada hitam merupakan data sekunder, yaitu data yang telah diolah pihak lain sebelumnya dari instansi yang berwenang dan terkait dengan sektor moneter yaitu Badan Pusat Statistik serta jurnal-jurnal ilmiah, website di internet, artikel dan literatur-literatur yang relevan dalam penelitian ini.
+
+## Metode penelitian
+
+### Data
+
+| Tahun | Amerika Serikat | Indonesia      |
+|-------|-----------------|----------------|
+| 2012  | 1214788000      | 18318395646000 |
+| 2013  | 753337000       | 11359945291500 |
+| 2014  | 35979000        | 542545330500   |
+| 2015  | 77914000        | 1174904163000  |
+| 2016  | 491485000       | 7411348057500  |
+| 2017  | 283535000       | 4275566032500  |
+| 2018  | 81849000        | 1234241995500  |
+| 2019  | 70258000        | 1059455511000  |
+| 2020  | 88144000        | 1329167448000  |
+| 2021  | 6956000         | 104893002000   |
+
+### Metode analisis
+
+Teknik analisis yang digunakan dalam penelitian ini adalah teknik kuantitatif dan penjabaran deskriptif. Teknik analisis kuantitatif merupakan analisis yang dilakukan dengan perhitungan angka-angka yang faktor yang mempengaruhi indeks nilai tukar rupiah terhadap dolar Amerika Serikat yaitu nilai ekspor komoditi lada hitam. Pendekatan yang digunakan adalah kuantitatif dengan mengaplikasikan model regresi linier berganda. Secara spesifik model tersebut dapat disajikan sebagai berikut:
+
+Yi=β0+β1Xi+μi
+
+Dimana: Yi adalah nilai tukar USD terhadap mata uang negara lain., β0 adalah koefisien konstanta; β1 adalah parameter; Xi adalah nilai ekspor dan μi adalah error term.
+
+## Pembahasan
+
+### Pembahasan masalah
+
+| X (Amerika Serikat) | Y (Indonesia)  |
+|---------------------|----------------|
+| 1214788000          | 18318395646000 |
+| 753337000           | 11359945291500 |
+| 35979000            | 542545330500   |
+| 77914000            | 1174904163000  |
+| 491485000           | 7411348057500  |
+| 283535000           | 4275566032500  |
+| 81849000            | 1234241995500  |
+| 70258000            | 1059455511000  |
+| 88144000            | 1329167448000  |
+| 6956000             | 104893002000   |
+
+### Analisis masalah
+
+Hasil regresinya adalah
+
+``` {call:}
+lm(formula = Y ~ X, data = dat)
+
+Residuals:
+       Min         1Q     Median 
+-1.048e-07 -2.870e-09 -1.787e-09 
+        3Q        Max 
+ 8.392e-09  7.684e-08 
+
+Coefficients:
+             Estimate Std. Error
+(Intercept) 3.770e-08  2.156e-08
+X           6.632e-05  2.923e-21
+              t value Pr(>|t|)    
+(Intercept) 1.749e+00    0.118    
+X           2.269e+16   <2e-16 ***
+---
+Signif. codes:  
+  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05
+  ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 5.268e-08 on 8 degrees of freedom
+Multiple R-squared:      1, Adjusted R-squared:      1 
+F-statistic: 5.146e+32 on 1 and 8 DF,  p-value: < 2.2e-16
+```
+
+berdasarkan output di atas,
+model regresinya bisa dilihat dari bagian estimate, yaitu y = 3.770e-08 +
+6.632e-05. dari uji parsial dengan t-value sebesar2.269e+16 dan p-value\<
+2.2e-16 dimana tingkat signifikansi yang digunakan adalah 0.05, memberikan
+hasil tolak H0: β1=0 artinya variabel X (Nilai tukar uang Amerika Serikat) secara
+signifikan berpengaruh terhadap model.
+
+Nilai koefisien regresi dari X sebesar 6.632e-05 dapat kita interpretasikan bahwa setiap kenaikan nilai tukar uang X (nilai tukar uang Amerika Serikat), maka nilai Y (nilai tukar uang Indonesia) akan naik sebesar 6.632e-05
+
+## Kesimpulan
+
+Berdasarkan data yang diperoleh beberapa hasil penelitian dan pembahasan. Uraian hasil penelitian dan pembahasan terdapat pada kesimpulan. Berikut kesimpulan dari penelitian mengenai volume ekspor lada hitam Indonesia ke negara Amerika Serikat sebagai berikut : Ekspor komoditi lada hitam berpengaruh terhadap nilai tukar. hal tersebut sesuai dengan teori balance of payment, ekspor neto sering menjadi faktor yang dapat mendorong naik dan turunnya kurs mata uang suatu negara. Nilai koefisien ekspor sebesar 3.770e-08 berarti kenaikan perubahan ekspor neto mengakibatkan nilai kurs dolar terhadap masing-masing negara. Dengan hasil ini berarti pendapatan ekspor berpengaruh positif terhadap nilai tukar.
+
+Saran : untuk komoditi lada hitam harus lebih meningkatkan volume ekspor lagi agar pendapatan ekspor berpengaruh positif terhadap nilai tukar makin tinggi daripada tahun tahun sebelumnya.
+
+## Referensi
+
+Fathin Ahmad Naufal, Bayu Krisnamurthi, dan Lukman M. Baga. (2021). ANALISIS FAKTOR-FAKTOR YANG MEMENGARUHI PRODUKSI LADA DI PROVINSI LAMPUNG. Forum Agribisnis (Agribusiness Forum), 12, 1--11. https://doi.org/10.29244/fagb.12.1.1-11 BPS.
+
+Ekspor Lada Hitam Menurut Negara Tujuan Utama, 2012- 2021. Badan Pusat Statistik. https://www.bps.go.id/statictable/2019/02/18/2021/ekspor-lada-hitam-menurut-negara-tujuan-utama-2012--2021.html ROOSGANDHA ELIZABETH.
+
+KERAGAAN KOMODITAS LADA INDONESIA. media.neliti, 1--21.
